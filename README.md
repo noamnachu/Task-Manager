@@ -12,16 +12,8 @@ Tasks are updated in real-time across all users' task lists. If an owner is dele
 
 ## Design Pattern Implementation
 
-### Bridge Pattern
-The application implements the Bridge design pattern to handle task management and participant interactions. This pattern separates the task's core functionality (abstraction) from its participant-specific operations (implementation). The Bridge pattern enables a many-to-many relationship where each task can have multiple participants, and each user can participate in multiple tasks. Task owners have full editing rights, while participants can only toggle task status between "In Progress" and "Completed".
+The application includes a TaskAssignment class to manage the relationships between User and Task. This design respects the basic implementation of Task and User while remaining open to future adjustments, such as supporting new roles for users in a task. Additionally, it facilitates a many-to-many relationship, allowing each task to have multiple participants and each user to participate in multiple tasks
 
-Key components:
-- Task abstraction: Handles basic task properties and operations
-- Participant implementation: Manages how different users (owner vs participants) interact with tasks
-- Benefits:
-  - Separates task management from user permissions
-  - Allows participants to view and update tasks without modifying core task structure
-  - Enables different levels of access (owner can edit everything, participants can only change status)
 
 ## Prerequisites
 
