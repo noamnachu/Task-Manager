@@ -2,13 +2,20 @@
 
 A collaborative task management system built with React and Node.js. Users can create, manage, and share tasks with other users.
 
+## How to use
+
+This is a task manager app. Upon your first login, you need to provide a unique user code and your full name. On subsequent logins, you must enter the same user code and full name. If the full name does not match the one stored in our system, you will receive a message prompting you to update it. You can delete your account and all associated tasks, making your user code available for use with a different full name.
+
+Each user can create tasks with different statuses and priorities. You can also assign participants to your tasks. The task owner can edit the task details, while participants can only change the status from "In Progress" to "Completed." To add a participant, provide their user code; you cannot add yourself or a non-registered code.
+
+Tasks are updated in real-time across all users' task lists. If an owner is deleted, their tasks are also deleted. If a participant is removed, they are only removed from the task's participant list.
+
 ## Features
 
 - User authentication with unique user codes
 - Create and manage tasks with priorities and due dates
 - Collaborative task sharing with other users
 - Real-time status updates
-- Responsive design for desktop and mobile
 
 ## Design Pattern Implementation
 
@@ -70,14 +77,6 @@ cd frontend
 npm start
 ```
 The application will open in your browser at http://localhost:3000
-
-## Usage
-
-1. Open http://localhost:3000 in your browser
-2. Enter a user code and your full name to sign in
-3. Create new tasks using the "Add Task" button
-4. Share tasks with other users by adding them as participants
-5. Track and update task status as needed
 
 ## Tech Stack
 
