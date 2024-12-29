@@ -10,13 +10,6 @@ Each user can create tasks with different statuses and priorities. You can also 
 
 Tasks are updated in real-time across all users' task lists. If an owner is deleted, their tasks are also deleted. If a participant is deleted, they are removed from the task's participant list.
 
-## Features
-
-- User authentication with unique user codes
-- Create and manage tasks with priorities and due dates
-- Collaborative task sharing with other users
-- Real-time status updates
-
 ## Design Pattern Implementation
 
 ### Bridge Pattern
