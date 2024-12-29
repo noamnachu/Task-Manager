@@ -44,7 +44,7 @@ Key components:
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd task-manager
+cd Task-Manager
 ```
 
 2. Install dependencies for both frontend and backend:
