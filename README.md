@@ -12,7 +12,8 @@ Tasks are updated in real-time across all users' task lists. If an owner is dele
 
 ## Design Pattern Implementation
 
-The application includes a TaskAssignment class to manage the relationships between User and Task. This design respects the basic implementation of Task and User while remaining open to future adjustments, such as supporting new roles for users in a task. Additionally, it facilitates a many-to-many relationship, allowing each task to have multiple participants and each user to participate in multiple tasks
+The application includes a TaskAssignment class to manage the relationships between User and Task. This design respects the basic implementation of Task and User while remaining open to future adjustments, such as supporting new roles for users in a task. Additionally, it facilitates a many-to-many relationship, allowing each task to have multiple participants and each user to participate in multiple tasks.
+This pattern keeps the code's flexibility, making it easier to accommodate future changes, such as adding more roles.
 
 
 ## Prerequisites
